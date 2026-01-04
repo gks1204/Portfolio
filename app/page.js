@@ -4,9 +4,9 @@
 import Image from 'next/image';
 import ThemeToggle from './components/ThemeToggle';
 import AnimatedHero from './components/AnimatedHero';
-import EditableSkills from './components/EditableSkills';
-import EditableProjects from './components/EditableProjects';
-import EditableExperience from './components/EditableExperience';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
 import ContactForm from './components/ContactForm';
 import ContactInfo from './components/ContactInfo';
 
@@ -21,7 +21,6 @@ export default function Home() {
         <div className="top-row">
           <nav aria-label="primary actions">
             <a href="mailto:nishi.oberoi24@gmail.com" className="btn">Contact</a>
-            <a href="https://www.behance.net" target="_blank" rel="noreferrer" className="btn outline">Behance</a>
           </nav>
           <ThemeToggle />
         </div>
@@ -38,17 +37,11 @@ export default function Home() {
         </p>
       </section>
 
-      <EditableSkills />
+      <Skills />
 
-      <section>
-        <h3>Resume</h3>
-        <p>Download my resume to learn more about my background and experience:</p>
-        <a href="/resume.pdf" download className="btn">📄 Download Resume</a>
-      </section>
+      <Experience />
 
-      <EditableExperience />
-
-      <EditableProjects />
+      <Projects />
 
       <ContactInfo />
 
@@ -58,7 +51,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <p>© 2025 Nishima Oberoi</p>
+        <p>© 2026 Nishima Oberoi</p>
       </footer>
     </main>
   );
